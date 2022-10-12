@@ -23,6 +23,7 @@ a {
     align-items: center;
     width: 1024px;
     margin: 0 16px;
+    flex-shrink: 1;
 }
 
 .logo {
@@ -44,13 +45,9 @@ a {
 .hero {
     padding: 48px 16px;
     display: flex;
-    width: 1024px;
+    max-width: 1024px;
     justify-content: space-between;
     flex: 1 1 auto;
-}
-
-.hero-text {
-    
 }
 
 .hero-text h1 {
@@ -81,4 +78,37 @@ a {
     width: 500px;
     height: 200px;
     flex-shrink: 0;
+}
+
+.information {
+    color: #1F2837;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 36px;
+}
+
+.info-cards {
+    max-width: 1024px;
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+}
+
+.card-img {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #3882f6;
+    border-radius: 10px;
+}
+
+.card p {
+    text-align: center;
+    width: 155px;
+    margin: 8px auto;
 }
